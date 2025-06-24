@@ -1,0 +1,79 @@
+@use "../module" as *;
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/31932384_m.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero__container{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 250px);
+    margin-left: 0;
+    justify-content: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    @include mq(sp){
+        width: 100%;
+    }
+}
+
+.hero__content{
+    background: rgba(0, 0, 0, 0.3);
+    padding:  1.5rem 3rem;
+    border-radius: 40px;
+    color: #fff;
+    @include mq(sp){
+        max-width: 450px;
+        padding:  1.5rem 2rem;
+        width: 80%;
+        margin-top: 3rem;
+    }
+    @include mq(xsp){
+        max-width: 450px;
+        padding:  1.5rem 2rem;
+        width: 76%;
+    }
+}
+.hero__actions{
+    @include mq(xsp){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hero__title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    @include mq(xsp){
+        font-size: 2.3rem;
+    }
+}
+
+.hero__subtitle{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero__button{
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    @include mq(sp){
+        text-align: center;
+    }
+}
+
+.hero__button--detail{
+    margin-left: 1rem;
+    @include mq(sp){
+        margin-left: 0.8rem;
+    }
+    @include mq(xsp){
+        margin-left: 0;
+    }
+}

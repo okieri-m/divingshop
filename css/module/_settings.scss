@@ -1,0 +1,24 @@
+@use 'sass:map';
+
+$dark-blue: #578FCA;
+$btn-hover: #2a66a4;
+$light-blue: #A1E3F9;
+$light-green: #D1F8EF;
+
+// フォント
+$noto-sans: "Noto Sans JP", sans-serif;
+$oswaldy: "Oswald", sans-serif;
+
+//ブレイクポイント
+$breakpoints: (
+  'tab': 'screen and (max-width: 1000px)',
+  'sp': 'screen and (max-width: 767px)',
+  'xsp': 'screen and (max-width: 500px)',
+  );
+
+//メディアクエリのミックスイン
+@mixin mq($breakpoint) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

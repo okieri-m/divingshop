@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アットホームなダイビングショップ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">沖縄の海を<br class="show--sp">一緒に探検しよう</h1>
+                <p class="hero__subtitle">初心者からベテランまで、アットホームな環境でダイビングを楽しめます</p>
+                <div class="hero__actions">
+                    <a href="" class="hero__button hero__button--reserve btn--blue btn--common">体験ダイビングを予約</a>
+                    <a href="" class="hero__button hero__button--detail btn--white btn--common">コースについて詳しく</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuToggle" class="humberger--menu show--sp gray--shadow">
+        <div class="humberger-menu__container">
+            <i class="ri-menu-line ri-lg"></i>
+        </div>
+    </button>
+    <!-- Language Switch (Mobile) -->
+    <div class="language-switch show--sp gray--shadow">
+        <span class="language-switch__text language-switch__text--jp">JP</span>
+        <label class="language-switch__toggle">
+            <input type="checkbox" class="language-switch__checkbox">
+            <span class="language-switch__slider"></span>
+        </label>
+        <span class="language-switch__text language-switch__text--en">EN</span>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar__header">
+            <h2 class="logo sidebar__logo">Logo</h2>
+            <!-- Language Switch (Desktop) -->
+            <div class="language-switch hide--sp">
+                <span class="language-switch__text language-switch__text--jp">JP</span>
+                <label class="language-switch__toggle">
+                    <input type="checkbox" class="language-switch__checkbox">
+                    <span class="language-switch__slider"></span>
+                </label>
+                <span class="language-switch__text language-switch__text--en">EN</span>
+            </div>
+        </div>
+        <nav class="sidebar__nav">
+            <ul class="sidebar__menu">
+                <li class="sidebar__menu-item">
+                    <a href="#message" class="sidebar__menu-link">
+                        <div class="sidebar__menu-icon">
+                            <i class="ri-message-3-line"></i>
+                        </div>
+                        <span class="sidebar__menu-text">メッセージ</span>
+                    </a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#menu" class="sidebar__menu-link">
+                        <div class="sidebar__menu-icon">
+                            <i class="ri-list-check"></i>
+                        </div>
+                        <span class="sidebar__menu-text">メニュー</span>
+                    </a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#contact" class="sidebar__menu-link">
+                        <div class="sidebar__menu-icon">
+                            <i class="ri-contacts-line"></i>
+                        </div>
+                        <span class="sidebar__menu-text">コンタクト</span>
+                    </a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#download" class="sidebar__menu-link">
+                        <div class="sidebar__menu-icon">
+                            <i class="ri-download-line"></i>
+                        </div>
+                        <span class="sidebar__menu-text">各種ダウンロード資料</span>
+                    </a>
+                </li>
+                <li class="sidebar__menu-item">
+                    <a href="#certification" class="sidebar__menu-link">
+                        <div class="sidebar__menu-icon">
+                            <i class="ri-award-line"></i>
+                        </div>
+                        <span class="sidebar__menu-text">ダイビング資格について</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar__footer">
+            <a href="#" class="sidebar__reserve-button has--icon btn--common btn--blue">
+                <div class="sidebar__reserve-icon">
+                    <i class="ri-calendar-line"></i>
+                </div>
+                <span class="sidebar__reserve-text">予約する</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pb-20 pr-0 md:pr-64">
+        <!-- Message Section -->
+        <section id="message" class="section">
+            <div class="wrapper">
+                <h2 class="sec__title message__sec-title js-scroll--animation">インストラクターからの<br class="show--sp sec-title--2row">メッセージ</h2>
+                <div class="message__content">
+                    <div class="message__image-wrapper">
+                        <img src="images/instructor.png" alt="インストラクター" class="message__image">
+                    </div>
+                    <div class="message__text-wrapper">
+                        <h3 class="message__name">佐藤 健太</h3>
+                        <p class="message__text">こんにちは！ダイビングインストラクターの佐藤です。私たちのショップでは、初めての方でも安心して楽しめるようサポートしています。沖縄の美しい海の世界を一緒に探検しましょう！</p>
+                        <p class="message__text">私自身、15年以上のダイビング経験があり、初心者の方々が海の魅力に触れる瞬間を見るのが何よりの喜びです。ダイビングは特別なスキルというよりも、自然と触れ合う素晴らしい体験です。</p>
+                        <p class="message__text">皆さんの「海への一歩」を全力でサポートします。ぜひお気軽にお問い合わせください！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section bg--light-blue">
+            <div class="wrapper">
+                <h2 class="sec__title js-scroll--animation">ダイビングメニュー</h2>
+                <div class="menu__grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu__card gray--shadow">
+                        <div class="card-image__container">
+                            <img src="images/32497465_s.jpg" alt="体験ダイビング" class="menu__card-image">
+                        </div>
+                        <div class="menu__card-content">
+                            <h3 class="menu__card-title">体験ダイビング</h3>
+                            <p class="menu__card-text">初めての方でも安心！インストラクターがマンツーマンでサポートします。水深5mまでの浅瀬で、美しい珊瑚や熱帯魚を観察できます。</p>
+                            <div class="menu__card-footer">
+                                <span class="menu__card-price">¥8,800/人</span>
+                                <a href="" class="btn--blue btn--common">詳細を見る</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 2 -->
+                    <div class="menu__card gray--shadow">
+                        <div class="card-image__container">
+                            <img src="images/3249802_s.jpg" alt="ファンダイビング" class="menu__card-image">
+                        </div>
+                        
+                        <div class="menu__card-content">
+                            <h3 class="menu__card-title">ファンダイビング</h3>
+                            <p class="menu__card-text">ライセンス保持者向けのツアーです。沖縄の人気ダイビングスポットへご案内します。少人数制で快適なダイビング体験を。</p>
+                            <div class="menu__card-footer">
+                                <span class="menu__card-price">¥12,000/人</span>
+                                <a href="" class="btn--blue btn--common">詳細を見る</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 3 -->
+                    <div class="menu__card gray--shadow">
+                        <div class="card-image__container">
+                            <img src="images/25623083_s.jpg" alt="ライセンスコース" class="menu__card-image">
+                        </div>
+                        <div class="menu__card-content">
+                            <h3 class="menu__card-title">ライセンスコース</h3>
+                            <p class="menu__card-text">国際的に認められたダイビングライセンスを取得できます。理論講習から実践まで、丁寧に指導いたします。</p>
+                            <div class="menu__card-footer">
+                                <span class="menu__card-price">¥60,000〜</span>
+                                <a href="" class="btn--blue btn--common">詳細を見る</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section">
+            <div class="wrapper">
+                <h2 class="sec__title js-scroll--animation">ダイビングギャラリー</h2>
+                <div class="gallery__grid">
+                    <img src="images/3249802_s.jpg" alt="サンゴ礁" class="gallery__image gray--shadow">
+                    <img src="images/25623083_s.jpg" alt="ダイバーグループ" class="gallery__image gray--shadow">
+                    <img src="images/fish.JPG" alt="魚の群れ" class="gallery__image gray--shadow">
+                    <img src="images/nimo.JPG" alt="かくれくまのみ" class="gallery__image gray--shadow">
+                    <img src="images/turtle.jpeg" alt="かめ" class="gallery__image gray--shadow">
+                    <img src="images/under-the-sea.JPG" alt="青い魚" class="gallery__image gray--shadow">
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification Section -->
+        <section id="certification" class="section bg--light-blue">
+            <div class="wrapper">
+                <h2 class="sec__title js-scroll--animation">ダイビング資格について</h2>
+                <div class="license gray--shadow">
+                    <div class="license__content">
+                        <div class="license__benefits">
+                            <h3 class="license__subtitle">ライセンス取得のメリット</h3>
+                            <ul class="license__list">
+                                <li class="license__list-item">
+                                    <div class="license__icon">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="license__text">世界中のダイビングスポットで潜れるようになる</span>
+                                </li>
+                                <li class="license__list-item">
+                                    <div class="license__icon">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="license__text">器材のレンタル料金が割引になることが多い</span>
+                                </li>
+                                <li class="license__list-item">
+                                    <div class="license__icon">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="license__text">インストラクター同伴なしで友人と潜れる</span>
+                                </li>
+                                <li class="license__list-item">
+                                    <div class="license__icon">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="license__text">より深い水深でのダイビングが可能になる</span>
+                                </li>
+                                <li class="license__list-item">
+                                    <div class="license__icon">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="license__text">スキルアップで様々なダイビングスタイルを楽しめる</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="license__steps">
+                            <h3 class="license__subtitle">取得までの流れ</h3>
+                            <ol class="license__step-list">
+                                <li class="license__step-item">
+                                    <div class="license__step-number">1</div>
+                                    <div class="license__step-content">
+                                        <h4 class="license__step-title">申し込み・教材受け取り</h4>
+                                        <p class="license__step-text">事前学習用の教材をお渡しします</p>
+                                    </div>
+                                </li>
+                                <li class="license__step-item">
+                                    <div class="license__step-number">2</div>
+                                    <div class="license__step-content">
+                                        <h4 class="license__step-title">学科講習</h4>
+                                        <p class="license__step-text">ダイビングの基礎知識を学びます</p>
+                                    </div>
+                                </li>
+                                <li class="license__step-item">
+                                    <div class="license__step-number">3</div>
+                                    <div class="license__step-content">
+                                        <h4 class="license__step-title">プール実習</h4>
+                                        <p class="license__step-text">浅いプールで基本スキルを練習します</p>
+                                    </div>
+                                </li>
+                                <li class="license__step-item">
+                                    <div class="license__step-number">4</div>
+                                    <div class="license__step-content">
+                                        <h4 class="license__step-title">海洋実習</h4>
+                                        <p class="license__step-text">実際の海で4回のダイビングを行います</p>
+                                    </div>
+                                </li>
+                                <li class="license__step-item">
+                                    <div class="license__step-number">5</div>
+                                    <div class="license__step-content">
+                                        <h4 class="license__step-title">認定・カード発行</h4>
+                                        <p class="license__step-text">国際的に認められたCカードが発行されます</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="license__footer">
+                        <a href="" class="license__button btn--blue btn--common">
+                            ライセンスコースの<br class="show--xsp">詳細を見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="section">
+            <div class="wrapper">
+                <h2 class="sec__title js-scroll--animation">各種ダウンロード資料</h2>
+                <div class="download__grid">
+                    <div class="download__card gray--shadow">
+                        <div class="download__content">
+                            <div class="download__icon-wrapper">
+                                <i class="ri-file-pdf-line ri-2x"></i>
+                            </div>
+                            <div class="download__text-wrapper">
+                                <h3 class="download__title">ダイビング器材チェックリスト</h3>
+                                <p class="download__description">ダイビング前に確認すべき器材のチェックリストです。初心者の方は必ずご確認ください。</p>
+                                <a href="" class="download__button">
+                                    <span class="download__button-text">ダウンロード</span>
+                                    <div class="download__button-icon">
+                                        <i class="ri-download-line"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="download__card gray--shadow">
+                        <div class="download__content">
+                            <div class="download__icon-wrapper">
+                                <i class="ri-file-pdf-line ri-2x"></i>
+                            </div>
+                            <div class="download__text-wrapper">
+                                <h3 class="download__title">沖縄の海の生き物図鑑</h3>
+                                <p class="download__description">沖縄の海でよく見られる魚や生き物の簡易図鑑です。ダイビング前の予習にどうぞ。</p>
+                                <a href="" class="download__button">
+                                    <span class="download__button-text">ダウンロード</span>
+                                    <div class="download__button-icon">
+                                        <i class="ri-download-line"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="download__card gray--shadow">
+                        <div class="download__content">
+                            <div class="download__icon-wrapper">
+                                <i class="ri-file-pdf-line ri-2x"></i>
+                            </div>
+                            <div class="download__text-wrapper">
+                                <h3 class="download__title">健康チェックシート</h3>
+                                <p class="download__description">ダイビング前に必要な健康状態の自己チェックシートです。安全のためご記入ください。</p>
+                                <a href="" class="download__button">
+                                    <span class="download__button-text">ダウンロード</span>
+                                    <div class="download__button-icon">
+                                        <i class="ri-download-line"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="download__card gray--shadow">
+                        <div class="download__content">
+                            <div class="download__icon-wrapper">
+                                <i class="ri-file-pdf-line ri-2x"></i>
+                            </div>
+                            <div class="download__text-wrapper">
+                                <h3 class="download__title">コース申込書</h3>
+                                <p class="download__description">各種ダイビングコースのお申し込み用紙です。事前にご記入いただくとスムーズです。</p>
+                                <a href="" class="download__button">
+                                    <span class="download__button-text">ダウンロード</span>
+                                    <div class="download__button-icon">
+                                        <i class="ri-download-line"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg--light-blue">
+            <div class="wrapper">
+                <h2 class="sec__title js-scroll--animation">お問い合わせ</h2>
+                <div class="contact">
+                    <div class="contact__container gray--shadow">
+                        <div class="contact__info">
+                            <h3 class="contact__title">お気軽にご連絡ください</h3>
+                            <p class="contact__description">ダイビングに関するご質問や予約のご相談など、お気軽にお問い合わせください。24時間以内に返信いたします。</p>
+                            
+                            <div class="contact__details">
+                                <div class="contact__detail-item">
+                                    <div class="contact__icon">
+                                        <i class="ri-map-pin-line"></i>
+                                    </div>
+                                    <div class="contact__detail-content">
+                                        <h4 class="contact__detail-title">住所</h4>
+                                        <p class="contact__detail-text">〒901-0000 沖縄県那覇市○○町1-2-3</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__detail-item">
+                                    <div class="contact__icon">
+                                        <i class="ri-phone-line"></i>
+                                    </div>
+                                    <div class="contact__detail-content">
+                                        <h4 class="contact__detail-title">電話番号</h4>
+                                        <p class="contact__detail-text">098-123-4567</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__detail-item">
+                                    <div class="contact__icon">
+                                        <i class="ri-mail-line"></i>
+                                    </div>
+                                    <div class="contact__detail-content">
+                                        <h4 class="contact__detail-title">メールアドレス</h4>
+                                        <p class="contact__detail-text">info@okinawa-diving.example.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__detail-item">
+                                    <div class="contact__icon">
+                                        <i class="ri-time-line"></i>
+                                    </div>
+                                    <div class="contact__detail-content">
+                                        <h4 class="contact__detail-title">営業時間</h4>
+                                        <p class="contact__detail-text">8:00〜18:00（年中無休）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__form-wrapper">
+                            <form class="contact__form">
+                                <div class="contact__form-group">
+                                    <label for="name" class="contact__form-label">お名前</label>
+                                    <input type="text" id="name" class="contact__form-input" placeholder="山田 太郎">
+                                </div>
+                                
+                                <div class="contact__form-group">
+                                    <label for="email" class="contact__form-label">メールアドレス</label>
+                                    <input type="email" id="email" class="contact__form-input" placeholder="example@email.com">
+                                </div>
+                                
+                                <div class="contact__form-group">
+                                    <label for="subject" class="contact__form-label">件名</label>
+                                    <input type="text" id="subject" class="contact__form-input" placeholder="体験ダイビングについて">
+                                </div>
+                                
+                                <div class="contact__form-group">
+                                    <label for="message" class="contact__form-label">メッセージ</label>
+                                    <textarea id="message" rows="4" class="contact__form-textarea" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="contact__submit-button btn--blue btn--common">送信する</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="js/script.js"></script>
+</body>
+</html>

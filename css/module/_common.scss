@@ -1,0 +1,164 @@
+@use "settings" as *;
+
+:where([class^="ri-"])::before { content: "\f3c2"; }
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $noto-sans;
+    overflow-x: hidden;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+button{
+    cursor: pointer;
+    background: unset;
+    border: unset;
+}
+.logo{
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $dark-blue;
+    @include mq(xsp){
+        font-size: 1.5rem;
+    }
+}
+
+/**
+表示切替スタイル
+**/
+.show--sp{
+    display: none !important;
+    @include mq(sp){
+        display: block !important;
+    }
+}
+.hide--sp{
+    @include mq(sp){
+        display: none !important;
+    }
+}
+.show--xsp{
+    display: none !important;
+    @include mq(xsp){
+        display: block !important;
+    }
+}
+
+// ボタンスタイル
+.btn--common{
+    padding: 0.8rem;
+    border-radius: 3px;
+    line-height: 1;
+}
+.has--icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--blue{
+    color: #fff;
+    background: $dark-blue;
+    transition: background 0.4s;
+    &:hover{
+        background: $btn-hover;
+    }
+}
+
+.btn--white{
+    color: $dark-blue;
+    background: #fff;
+    transition: opacity 0.4s;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.wrapper{
+    max-width: 64rem;
+    margin: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    @include mq(sp){
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    @include mq(xsp){
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: calc(100% - 250px);
+    @include mq(sp){
+        width: 100%;
+    }
+}
+
+// セクションタイトル
+.sec__title {
+    display: inline-block;
+    position: relative;
+    margin: calc(3.5em / 2) 0 3.5rem calc(3.5em / 2);
+    color: #333333;
+    line-height: 1;
+    font-size: 1.8rem;
+    @include mq(xsp){
+        font-size: 1.6rem;
+    }
+}
+
+.sec__title::before {
+    position: absolute;
+    bottom: calc(-3.5em / 4);
+    left: calc(-3.5em / 2);
+    z-index: -1;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background: $dark-blue;
+    content: '';
+    @include mq(xsp){
+        width: 3.2em;
+        height: 3.2em;
+    }
+}
+
+// 色・シャドウ指定
+.bg--light-blue{
+    background: rgba(161, 227, 249, 0.1);
+}
+.gray--shadow{
+    box-shadow: 0px 0px 15px -8px #777777;
+}
+
+// スクロールアニメーション
+.js-scroll--animation{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s;
+    &.fade--in{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
