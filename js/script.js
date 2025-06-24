@@ -55,14 +55,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (isEnglish) {
                     // 英語ページに切り替え
                     if (!currentPath.includes('index.en.html')) {
-                        const newPath = currentPath.replace('/', '/index.en.html');
-                        window.location.href = newPath;
+                        window.location.href = `${ currentPath }index.en.html`;
                     }
                 } else {
                     // 日本語ページに切り替え
-                    if (currentPath.includes('.en.html')) {
-                        const newPath = currentPath.replace('/index.en.html', '/');
-                        window.location.href = newPath;
+                    if (currentPath.includes('index.en.html')) {
+                        window.location.href = "/";
                     }
                 }
             }, 300); // トランジション時間と同じ時間を設定
