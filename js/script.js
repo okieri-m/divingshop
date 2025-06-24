@@ -54,14 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 現在のページの言語バージョンを切り替え
                 if (isEnglish) {
                     // 英語ページに切り替え
-                    if (!currentPath.includes('.en.html')) {
-                        const newPath = currentPath.replace('.html', '.en.html');
+                    if (!currentPath.includes('index.en.html')) {
+                        const newPath = currentPath.replace('/', '/index.en.html');
                         window.location.href = newPath;
                     }
                 } else {
                     // 日本語ページに切り替え
                     if (currentPath.includes('.en.html')) {
-                        const newPath = currentPath.replace('.en.html', '.html');
+                        const newPath = currentPath.replace('/index.en.html', '/');
                         window.location.href = newPath;
                     }
                 }
