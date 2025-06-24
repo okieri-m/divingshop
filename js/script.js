@@ -54,13 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 現在のページの言語バージョンを切り替え
                 if (isEnglish) {
                     // 英語ページに切り替え
-                    if (!currentPath.includes('index.en.html')) {
-                        window.location.href = `${ currentPath }index.en.html`;
+                    if (!currentPath.includes('en.html')) {
+                        window.location.href = `${ currentPath }en.html`;
                     }
                 } else {
                     // 日本語ページに切り替え
-                    if (currentPath.includes('index.en.html')) {
-                        window.location.href = "/";
+                    if (currentPath.includes('en.html')) {
+                        let newPath = currentPath.replace('en.html', '');
+                        window.location.href = newPath;
                     }
                 }
             }, 300); // トランジション時間と同じ時間を設定
